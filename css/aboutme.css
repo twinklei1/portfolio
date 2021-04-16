@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+#aboutme{
+
+}
+#aboutme>.tit{
+    height: 215px;
+    background-color: #cba394;
+    color: #fff;
+}
+#aboutme>.tit>.text-center{
+    height: 50px;
+    line-height: 50px;
+}
+#aboutme>.tit>div{
+    margin-top: -10px;
+}
+#aboutme>.tit>div>p{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#aboutme>.about-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+#aboutme>.about-container>.visual{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 800px;
+    height: 520px;
+    background-image: url(../images/aboutme/coding.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#aboutme>.about-container>.visual>div{
+    overflow: hidden;
+    position: relative;
+    width: calc(800px / 3 - 2px);
+    height: 100%;
+    color: #fff;
+}
+
+
+#aboutme>.about-container>.visual>div:before{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17,17,17,0.2);
+    content: '';
+}
+
+
+#aboutme>.about-container>.visual>div:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17,17,17,0.4);
+    opacity: 0;
+    transition: all 0.3s;
+    content: '';
+}
+
+#aboutme>.about-container>.visual>div:hover:after{
+    opacity: 1;
+}
+
+#aboutme>.about-container>.visual>div>h3,
+#aboutme>.about-container>.visual>div>p{
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    z-index: 100;
+}
+
+#aboutme>.about-container>.visual>div>h3{
+    top: 360px;
+    width: 200px;
+    margin-left: -100px;
+    font-size: 20px;
+}
+
+#aboutme>.about-container>.visual>div>p{
+    top: 420px;
+    width: 225px;
+    margin-left: -112px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+#aboutme>.about-container>div{
+    width: 240px;
+}
+
+#aboutme>.about-container>div>.license,
+#aboutme>.about-container>div>.Career{
+    margin: 40px auto;
+}
+#aboutme>.about-container>div>.license>h3,
+#aboutme>.about-container>div>.Career>h3{
+    display: inline-block;
+    height: 48px;
+    font-size: 20px;
+    line-height: 48px;
+    border-top: 1px solid #000;
+}
+#aboutme>.about-container>div>.license>p,
+#aboutme>.about-container>div>.Career>p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+#aboutme>.program{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+#aboutme>.program>h3{
+    display: inline-block;
+    height: 48px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 48px;
+    border-top: 1px solid #000;
+}
+#aboutme>.program>img{
+    margin-top: -10px;
+}

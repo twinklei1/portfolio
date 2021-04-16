@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+#graphic{
+    position: relative;
+    width: 1100px;
+    margin-top: 40px;
+    /* border: 1px solid #000; */
+}
+
+#graphic>h2{
+    display: inline-block;
+    height: 40px;
+    margin-top: 40px;
+    font-size: 24px;
+    border-bottom: 3px solid #c33;
+}
+#graphic .works{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    /* border: 1px solid #000; */
+}
+
+#graphic .works>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+#graphic .works>ul>li:nth-child(1){background-image: url(../images/graphics/sweetpea_mockup_pink.png);}
+#graphic .works>ul>li:nth-child(2){background-image: url(../images/graphics/lovelyz_mockup.png);background-position: 0 -10px;}
+#graphic .works>ul>li:nth-child(3){background-image: url(../images/graphics/stress_thum.png);background-position: -50px 0;background-size: cover;}
+#graphic .works>ul>li:nth-child(4){background-image: url(../images/graphics/collage.png);background-position: 0 -20px;}
+#graphic .works>ul>li:nth-child(5){background-image: url(../images/graphics/banner_spring.png);background-position: 0 -30px;}
+#graphic .works>ul>li:nth-child(6){background-image: url(../images/graphics/graphics_lst_thmb_6.png);}
+#graphic .works>ul>li:nth-child(7){background-image: url(../images/graphics/화장품상세_thum.png);}
+#graphic .works>ul>li:nth-child(8){background-image: url(../images/graphics/토마토_thum.png);}
+
+
+#graphic .works>ul>li{
+    position: relative;
+    width: 240px;
+    margin-bottom: 170px;
+    background-color: pink;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#graphic .works>ul>li>a{
+    display: block;
+    height: 180px;
+    font-size: 16px;
+    transition: all 0.2s;
+    border-top: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+#graphic .works>ul>li:hover>a{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#graphic .works>ul>li:hover>a:before,
+#graphic .works>ul>li:hover>a:after{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 4px;
+    margin: -2px 0 0 -8px;
+    background-color: #fff;
+    content: '';
+}
+#graphic .works>ul>li:hover>a:after{
+    transform: rotate(90deg);
+}
+
+#graphic .works>ul>li>a>.category{
+    display: none;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 100px;
+    height: 20px;
+    color: #ebd728;
+    font-weight: 600;
+}
+#graphic .works>ul>li:hover>a>.category{
+    display: block;
+}
+#graphic .works>ul>li>a>h3{
+    margin-top: 220px;
+}
+#graphic .works>ul>li>a>p{
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+/* 디자인 작품보기 라이트박스 */
+#graphic .shadow{
+    display: none;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(94, 110, 141, 0.5);
+    z-index: 2000;
+}
+#graphic .shadow>.detail{
+    position: relative;
+    width: 960px;
+    margin: 130px auto;
+    padding-top: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+#graphic .shadow>.detail>.tit{display: flex;}
+#graphic .shadow>.detail>div>h4{
+    margin-left: 80px;
+    font-size: 26px;
+}
+#graphic .shadow>.detail>div>.psd{
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    margin-left: 10px;
+    text-indent: -9999px;
+    background-image: url(../images/graphics/graphics_ico_psd.png);
+    background-size: cover;
+}
+
+#graphic .shadow>.detail>.sumup{
+    width: 800px;
+    margin: 0 auto 70px ;
+}
+#graphic .shadow>.detail>.sumup:before{
+    display: block;
+    width: 800px;
+    margin: 30px auto 50px;
+    border-bottom: 1px solid #aaa;
+    content: '';
+}
+
+
+#graphic .shadow>.detail>.sumup>img{
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+#graphic .shadow>.detail>.sumup>address{text-align: center;}
+
+#graphic>.works>ul>li:nth-of-type(2)>.shadow>.detail>.sumup>img{
+    width: 400px;
+    height: 400px;
+    margin-left: 220px;
+}
+#graphic>.works>ul>li:nth-of-type(4)>.shadow>.detail>.sumup>img{width: 650px;margin-left: 80px;}
+#graphic>.works>ul>li:nth-of-type(5)>.shadow>.detail>.sumup>img{width: 450px;margin-left: 180px;}
+
+
+/* 작품 설명 */
+#graphic .explain{
+    margin-top: 45px;
+    padding: 30px 30px;
+    background-color: #eee;
+}
+#graphic .explain>h5{
+    font-size: 21px;
+}
+#graphic .explain>h5:after{
+    display: block;
+    width: 750px;
+    margin: 25px 0;
+    border-bottom: 1px solid #aaa;
+    content: '';
+}
+
+
+#graphic .explain>dl>dt{
+    margin-bottom: 5px;
+    color: #ea5f62;
+    font-size: 14px;
+}
+#graphic .explain>dl>dd{
+    margin-bottom: 40px;
+    line-height: 1.8;
+    font-size: 12px;
+}
+#graphic .explain>dl>dd>span{display: block;}
+#graphic .explain>dl>dd>.use_color{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 8px 0;
+    text-indent: -9999px;
+    border: 1px solid #ccc;
+}
+
+
+/* 닫기버튼 */
+#graphic .clse{
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+/* X 엑스 만들기 */
+#graphic .clse:before,
+#graphic .clse:after{
+    display: block;
+    position: absolute;
+    top: 12px;
+    width: 14px;
+    height: 3px;
+    background-color: #ccc;
+    content: '';
+}
+
+#graphic .clse:before{
+    left: 8px;
+    transform: rotate(45deg);
+}
+#graphic .clse:after{
+    right: 8px;
+    transform: rotate(-45deg);
+}
+
+/* 아래쪽 닫기버튼 */
+#graphic .clse_bottom{
+    top: initial;
+    bottom: 8px;
+}
+#graphic .clse_bottom:before,
+#graphic .clse_bottom:after{
+    top: initial;
+    bottom: 12px;
+}

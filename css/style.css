@@ -1,0 +1,237 @@
+@charset "utf-8";
+@import url(visual.css);
+@import url(aboutme.css);
+@import url(webpofol.css);
+@import url(graphic.css);
+@import url(project.css);
+
+*{font-family: noto sans cj kr;}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 66px;
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+    z-index: 1000;
+}
+header>.logo{
+    width: 160px;
+    margin-left: 10px;
+    background-image: url(../images/main/header_logo.png);
+    background-position: 0 14px;
+    background-repeat: no-repeat;
+    z-index: 300;
+}
+header>.logo>a{
+    display: block;
+    height: 66px;
+    text-indent: -9999px;
+}
+
+header>nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(100% - 310px);
+    /* border: 1px solid #000; */
+}
+header>nav>.gnb{
+    display: flex;
+    flex-flow: row nowrap;
+}
+header>nav>.gnb>li{
+    width: 20%;
+}
+header>nav>.gnb>li>a{
+    display: block;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+}
+header>nav>.gnb>li.on>a,
+header>nav>.gnb>li:hover>a{
+    color: #c33;
+    font-weight: 600;
+}
+
+
+section{
+    width: 1100px;
+    margin: 16px auto;
+}
+
+#main>h2{
+    height: 100px;
+    margin-left: 30px;
+    color: #666;
+    line-height: 100px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 50px;
+}
+/* 메인섹션 */
+.mainitem{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+.mainitem>.introduce{
+    color: #666;
+    text-align: center;
+}
+.mainitem>.introduce>h3{
+    margin: 20px 0 12px;
+    font-size: 16px;
+}
+.mainitem>.introduce>span{
+    color: #aaa;
+}
+.mainitem>.introduce>p{
+    margin-top: 10px; 
+    line-height: 2.8;
+    font-size: 13px;
+}
+.mainitem>.workbox>img{
+    margin: 0 0 16px 16px;
+}
+
+
+.workstyle{
+    height: 128px;
+    margin: 16px 0;
+    color: #fff;
+    background-image: url(../images/main/coding-style.png);
+}
+.workstyle>div{
+    position: relative;
+    width: 715px;
+    height: 128px;
+    margin-left: 270px;
+}
+.workstyle>div>p{
+    position: absolute;
+    top: 50%;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.workstyle>div>p:nth-child(1){
+    top: 25px;
+    text-align: right;
+}
+.workstyle>div>p:nth-child(2){
+    top: 45px;
+    left: 420px;
+}
+.workstyle>div>p:nth-child(3){
+    top: 50%;
+    left: 520px;
+    margin-top: -8px;
+}
+
+.workstyle>div>p>strong{
+    color: #ffb95e;
+}
+
+.tellme{
+    position: relative;
+    height: 576px;
+    background-image: url(../images/main/tellme.png);
+}
+.tellme>.text-center{
+    color: #fff;
+    font-size: 22px;
+}
+.tellme>.tel-container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+}
+.tellme>.tel-container>div{
+    width: 365px;
+    text-align: center;
+}
+.tellme>.tel-container>div>h4{
+    margin: 20px auto 10px;
+    font-size: 15px;
+}
+.tellme>.tel-container>div>p{
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/*/////////////////////// 푸터 ////////////////////////*/
+footer{
+    min-width: 1100px;
+    margin-top: 100px;
+}
+footer>article.working{
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+}
+
+footer>article.working>p{
+    width: 1100px;
+    margin: 0 auto;
+    text-indent: 50px;
+    line-height: 80px;
+}
+
+footer>article.working>p>a{
+    margin: 0 30px;
+    font-weight: 600;
+}
+
+footer>article.info{
+    background-color: #222;
+}
+footer>article.info>.container{
+    position: relative; /* 로고에 대한 기준점 */
+    width: 1100px;
+    margin: 0 auto;
+    padding: 45px 0 20px;
+}
+footer>article.info>.container>h2,
+footer>article.info>.container>.contact,
+footer>article.info>.container>.iam_1,
+footer>article.info>.container>.iam_2{
+    margin-bottom: 15px;
+    padding-left: 30px;
+    color: #adadad;
+    font-size: 13px;
+}
+
+footer>article.info>.container>h2:after{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 93px;
+    height: 88px;
+    margin-top: -44px;
+    background-image: url(../images/main/footer_logo.gif);
+    content: '';
+}
+footer>article.info>.container>.contact>a{
+    color: #ababab;
+}
+footer>article.info>.container>.contact>.bar{
+    margin: 0 10px;
+}
+
+aside{
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    width: 35px;
+    height: 60px;
+    margin-left: 560px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    background-color: #c33;
+    cursor: pointer;
+}
